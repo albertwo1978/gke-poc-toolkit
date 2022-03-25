@@ -29,6 +29,7 @@ module "cluster_build" {
   k8s_users                         = var.k8s_users
   multi_cluster_gateway             = var.multi_cluster_gateway
   anthos_service_mesh               = var.anthos_service_mesh
+  acm_tf_module_repo                = "{{.TFModuleRepo}}acm?ref={{.TFModuleBranch}}"
 }
 
 variable "project_id" {
