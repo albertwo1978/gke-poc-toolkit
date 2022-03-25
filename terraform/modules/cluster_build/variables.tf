@@ -172,10 +172,10 @@ variable "k8s_users" {
   }
 }
 
-variable "acm_tf_module_repo" {
+variable "source" {
   type        = string
-  description = "Repo used "
-  default     = "github.com/GoogleCloudPlatform/gke-poc-toolkit//terraform/modules/acm"
+  description = "Default repo"
+  default     = "github.com/GoogleCloudPlatform/gke-poc-toolkit//terraform/modules"
 }
 
 variable "multi_cluster_gateway" {
